@@ -8,8 +8,8 @@ let input2: string
 let input3: string
 let input4: string
 let characters: int8
-let pressedA = input.buttonIsPressed(Button.A)
-let pressedB = input.buttonIsPressed(Button.B)
+let pressedA
+let pressedB
 // Reset Variable Values
 digit1 = null
 digit2 = null
@@ -21,8 +21,12 @@ input3 = null
 input4 = null
 characters = 0
 basic.showString("Please input a code")
+basic.forever(function() {
+    pressedA = input.buttonIsPressed(Button.A)
+    pressedB = input.buttonIsPressed(Button.B)
+})
 while (characters < 4){ 
-    if (pressedA = true) {
+    if (pressedA) {
         basic.showString("A", 100)
         if (characters = 0){
             digit1 = "A"
@@ -41,7 +45,7 @@ while (characters < 4){
                     }
         characters += 1
     }   
-    if (pressedB = true) {
+    if (pressedB) {
         basic.showString("B", 100)
         if (characters = 0) {
             digit1 = "B"
@@ -103,4 +107,9 @@ basic.forever(function() {
             characters += 1
         }
     } 
+    if (input1 = digit1) {
+        if (input2 = digit2) {
+            
+        }
+    }
 })
