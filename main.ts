@@ -11,8 +11,22 @@ let characters
 
 basic.showString("Please input a code")
 characters = 0
-while (characters < 4){
-    if (true) {
-        
-    }
+while (characters < 4){ 
+    input.onButtonPressed(Button.A, function() {
+        if (characters = 0){
+            digit1 = "A"
+        }
+        else
+            if (characters = 1){
+                digit2 = "A"
+            }
+            else
+                if (characters = 2){
+                    digit3 = "A"
+                }
+                else
+                    if (characters = 3){
+                        digit4 = "A"
+                    }
+    })
 }
